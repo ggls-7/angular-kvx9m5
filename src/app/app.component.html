@@ -1,0 +1,19 @@
+<h1>Bloco de Notas</h1>
+<table>
+ <td>
+   <tr> Digite o texto:<input type="Text" [(ngModel)]=campoTexto></tr>
+ </td>
+ <td>
+   <tr><button type="adicionar" (click)="addTexto()">Adicionar </button></tr>
+ </td>
+ <br>
+</table>
+ <h3>Lista de notas</h3>
+  <ol *ngFor="let texto of listaTexto">
+   {{texto}}
+  <button type="submit" (click)="removeTexto(texto)" style="color:red"> X </button>
+  
+  </ol>
+
+
+
